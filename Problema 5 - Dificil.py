@@ -125,8 +125,8 @@ class JogoDaVelha:
 
     def reiniciar(self):
         self.tabuleiro = [""] * 9
-        self.jogo_ativo = False
-        self.label_status.config(text="SUA VEZ (X)", fg="#00FFC8")
+        self.jogo_ativo = True
+        self.label_status.config(text="SUA VEZ (O)", fg="#00FFC8")
         for btn in self.botoes:
             btn.config(text="", state="normal", bg="#2A2A2A")
 
