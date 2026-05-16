@@ -79,7 +79,7 @@ class JogoDaVelha:
         if not livres:
             i = random.choice(livres)
             self.fazer_movimento(i, self.computador, "#FF0055")
-            self.label_status.config(text="SUA VEZ (X)", fg="#00FFC8")
+            self.label_status.config(text="SUA VEZ (O)", fg="#00FFC8")
             self.verificar_resultado()
 
     def fazer_movimento(self, i, player, cor):
